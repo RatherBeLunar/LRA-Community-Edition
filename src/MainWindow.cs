@@ -197,7 +197,7 @@ namespace linerider
                 }
 
                 MSAABuffer.Use(RenderSize.Width, RenderSize.Height);
-                GL.BlendFunc(BlendingFactorSrc.SrcAlpha, BlendingFactorDest.OneMinusSrcAlpha);
+                GL.BlendFunc(BlendingFactor.SrcAlpha, BlendingFactor.OneMinusSrcAlpha);
                 GL.Clear(ClearBufferMask.ColorBufferBit);
                 GL.Enable(EnableCap.Blend);
 

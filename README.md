@@ -22,7 +22,7 @@ You will need the [mono framework](http://www.mono-project.com/download/stable/)
 We are tracking issues on https://trello.com/b/0RGXoFZQ/lra-community-edition. If the issue you wish to report isn't present there, please submit an issue here on Github, and we will add it to the Trello board.
 
 # Build
-First extract the source code and download [gwen-lra](https://github.com/jealouscloud/gwen-lra/tree/dbe3e84568b163f3e20cd876672fc1b3b0e40873)'s source code and extract it to the /lib/gwen-lra/ folder
+First extract the source code and download [gwen-lra](https://github.com/RatherBeLunar/gwen-lra)'s source code and extract it to the /lib/gwen-lra/ folder
 Run nuget restore in src (Visual Studio (not VS Code) will do this for you)
 Build src/linerider.sln with msbuild or Visual Studio
 Download Discord's Game SDK at [https://dl-game-sdk.discordapp.net/latest/discord_game_sdk.zip](https://dl-game-sdk.discordapp.net/latest/discord_game_sdk.zip) and copy /lib/x86/discord_game_sdk.dll to the build directory. (If that doesn't work for some reason try x86_64)

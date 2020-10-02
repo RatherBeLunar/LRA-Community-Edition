@@ -16,7 +16,7 @@ namespace linerider.UI
 {
     public class GeneratorWindow : DialogBase
     {
-        private CollapsibleList _typecontainer;
+        //private CollapsibleList _typecontainer;
         private ControlBase _focus;
         private int _tabscount = 0;
         private bool GeneratePressed = false;
