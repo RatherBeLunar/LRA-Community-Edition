@@ -325,9 +325,9 @@ namespace linerider.UI
                     }
                 }
             };
-            GwenHelper.CreateLabeledControl(_lineoptions, "Line Blue", _linered).Dock = Dock.Bottom;
+            GwenHelper.CreateLabeledControl(_lineoptions, "Line Blue", _lineblue).Dock = Dock.Bottom;
             GwenHelper.CreateLabeledControl(_lineoptions, "Line Green", _linegreen).Dock = Dock.Bottom;
-            GwenHelper.CreateLabeledControl(_lineoptions, "Line Red", _lineblue).Dock = Dock.Bottom;
+            GwenHelper.CreateLabeledControl(_lineoptions, "Line Red", _linered).Dock = Dock.Bottom;
         }
         private void SetupRight()
         {
