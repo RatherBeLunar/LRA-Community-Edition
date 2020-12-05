@@ -1,5 +1,7 @@
 # How to create a custom Scarf
-In the /Documents/LRA/Scarves directory create a new text file and name it the name you want the scarf to be
+Navigate to your documents folder > LRA > Scarves and create a new text document. Name it the name you wish the scarf to have.
+
+This is the layout for a custom scarf:
 ```
 #LRTran Scarf File
 [Hex color], [opacity]
@@ -8,7 +10,7 @@ In the /Documents/LRA/Scarves directory create a new text file and name it the n
 [Hex color], [opacity]
 ...
 ```
-You can apply this scarf in Preferences -> LRTran -> Rider Settings -> Selected Scarf
+You can apply this scarf in LRA:CE in Preferences > LRTran > Rider Settings > Selected Scarf.
 
 Example: Rainbow.txt
 
