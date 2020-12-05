@@ -22,6 +22,15 @@ namespace linerider.UI
         private CollapsibleList _prefcontainer;
         private ControlBase _focus;
         private int _tabscount = 0;
+        //Names can be dynamically added to the list
+        private string[] Contributors = {
+            "Luna Kampling",
+            "Malizma",
+            "MoonlitJolty",
+            "RatherBeLunar",
+            "Tran Fox",
+            "Superdavo0001"
+        };
         public PreferencesWindow(GameCanvas parent, Editor editor) : base(parent, editor)
         {
             Title = "Preferences";
@@ -1053,8 +1062,13 @@ namespace linerider.UI
             GwenHelper.CreateLabeledControl(rblHeader, "Relative Animation Y Velocity", animationVelYSpinner);
 
         }
+        private void PopulateCredits(ControlBase parent)
+        {
+            foreach(string developer in Contributors)
+            GwenHelper.CreateInfoText(parent, "- "+developer);
+        }
 
-        private void Setup()
+            private void Setup()
         {
             var cat = _prefcontainer.Add("Settings");
             var page = AddPage(cat, "Editor");
@@ -1084,6 +1098,9 @@ namespace linerider.UI
             cat = _prefcontainer.Add("Addons");
             page = AddPage(cat, "Animation");
             PopulateRBLSettings(page);
+            cat = _prefcontainer.Add("Other");
+            page = AddPage(cat, "Credits");
+            PopulateCredits(page);
             if (Settings.SettingsPane >= _tabscount && _focus == null)
             {
                 Settings.SettingsPane = 0;

@@ -47,6 +47,30 @@ namespace linerider.UI
             };
             return panel;
         }
+        public static Panel CreateInfoText(ControlBase parent, string headertext)
+        {
+            var canvas = (GameCanvas)parent.GetCanvas();
+            Panel panel = new Panel(parent)
+            {
+                Dock = Dock.Top,
+                Children =
+                {
+                    new Label(parent)
+                    {
+                        Dock = Dock.Top,
+                        Text = headertext,
+                        Alignment = Pos.Left | Pos.CenterV,
+                        Font = canvas.Fonts.Default,
+                        Margin = new Margin(-10, 5, 0, 5)
+                    }
+                },
+                AutoSizeToContents = true,
+                Margin = new Margin(0, 0, 0, 5),
+                Padding = new Padding(10, 0, 0, 0),
+                ShouldDrawBackground = false
+            };
+            return panel;
+        }
         public static ControlBase CreateLabeledControl(ControlBase parent, string label, ControlBase[] controls)
         {
             foreach (var control in controls)
